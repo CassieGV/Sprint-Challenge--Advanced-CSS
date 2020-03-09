@@ -1,23 +1,26 @@
 // Home Content
+// body {
 
+//   font-family: 'Russo One', normal;
+// }
 .home {
-  background: red;
-  // display: flex;
-  .navigation {
+ 
+  .intro {
     justify-content: center;
-    nav {
+
+    img {
       justify-content: space-around;
     }
-  }
-
-  .intro {
 
     h2 {
       padding: 15px;
     }
 
     p {
+      width: 75%;
       padding:0 15px;
+      color: grey;
+      font-style: none;
     }
   
   }
@@ -43,13 +46,15 @@
     }
 
     p {
+      width: 75%;
       margin-top: 13px;
+      color: grey;
     }
   }
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    // border-top: 1px solid @main-border-color;
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -65,8 +70,8 @@
         margin-bottom: 26px;
       }
 
-      .btn {
-      }
+      // .btn {
+      // }
     }
 
     .walk-img {
@@ -78,6 +83,17 @@
         height: auto;
         border-radius: 10px;
       }
+    }
+  }
+  @media @phone {
+    .sky {
+      display: none;
+    }
+    .launch {
+      display: none;
+    }
+    .walk {
+      flex-direction: column;
     }
   }
 }// home
